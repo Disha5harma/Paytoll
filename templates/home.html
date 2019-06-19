@@ -1,0 +1,16 @@
+
+  {% extends 'base.html'%}
+
+  {% block content %}
+    </script>
+    <form name="myForm" action="{% url 'tax'  %}">
+        {% csrf_token %}
+        Car Number: <input type="text" name="car_number">
+       
+        <input type="submit" value="Check!">
+      </form>
+    {% endblock %}
+      
+      
+  
+
